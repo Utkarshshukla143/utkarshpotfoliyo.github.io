@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Utkarsh Shukla Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: blue;
+            color: white;
+            font-family: 'Poppins', sans-serif;
+            ;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 50px;
+            background-color: rgb(0, 0, 38);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: aliceblue;
+        }
+
+        nav ul li a:hover {
+            color: aqua;
+            font-size: 1.1rem;
+        }
+
+        .left {
+            font-size: 1.5rem;
+        }
+
+        .firstSection {
+            display: flex;
+            justify-content: space-around;
+            margin: 23px 0;
+        }
+
+        .firstSection>div {
+            width: 25%;
+            padding-top: 50px;
+        }
+
+        .leftSection {
+
+            font-size: 2rem;
+        }
+        .leftSection .btn{
+            margin-top: 60px;
+            padding: 8px;
+            background: black;
+            color: aliceblue;
+            border: 2px solid aqua;
+            border-radius: 6px;
+            font-size: 15px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        
+
+        .thirdSection {
+            max-width: 80vw;
+            margin: auto;
+        }
+
+        #element {
+            color: whitesmoke;
+        }
+
+        .secondSection {
+            max-width: 80vw;
+            margin: auto;
+           
+        }
+
+        main hr {
+            border: 0;
+            background: aqua;
+            height: 1.2px;
+            margin: 20px 84px;
+        }
+
+        .secondSection h1 {
+            font-size: 1.9rem;
+        }
+
+        .text-gray {
+            color: orange;
+        }
+
+        .secondSection .box {
+            background: white;
+            width: 80dw;
+            height: 2px;
+            margin: 56px 0;
+            display: flex;
+        }
+
+        .secondSection .vertical {
+            height: 93px;
+            width: 2px;
+            background-color: white;
+            margin: 0 110px;
+        }
+
+        .image-top {
+            width: 50px;
+            position: relative;
+            top: -32px;
+            left: -25px;
+        }
+
+        .vertical-title {
+            position: relative;
+            top: 40px;
+            width: 250px;
+        }
+
+        .vertical-desc {
+            position: relative;
+            top: 85px;
+            color: gray;
+            font-size: 0px;
+        }
+
+        b {
+            color: aqua;
+        }
+        footer{
+            background-color: pink;
+            
+            
+        }
+    
+        footer a:hover {
+            color: red;
+            font-size: 1.1rem;
+            text-decoration: none;
+        }
+        .footer{
+            display: flex;
+            padding: 23px 12px;
+            justify-content: space-evenly;
+        }
+        .footer div{
+            width: 165px;
+        }
+        h3{
+            font-size: large;
+            color: purple;
+            padding-left: 10px;
+        }
+        a{
+            text-decoration: none;
+            font-weight: bold;
+        }
+        footer .footer-rights{
+            text-align: center;
+            color: red;
+            padding: 10px ;
+        }
+        #last{
+	width: 100%;
+	height: auto;
+	justify-content: center;
+	background-color: #ffb3b3;
+	}
+	.full{
+	width: 80%;
+	display: inline-block;
+	margin:2%;
+	margin-left: 10%;
+	text-align: center;
+	background-color: black;
+	color: white;
+	border:15px solid orange;
+	border-radius: 5px;
+	margin-bottom: 8%;
+	margin-top: 8%;
+	}
+	.full h3{
+	font-size: 2rem;
+	display:block;
+	margin: 2%;
+	margin-bottom: 0;
+	}
+	.lt{
+	padding: 2%;
+	margin: 2%;
+	}
+	.rt{
+	padding: 2%;
+	margin: 2%;
+	}
+	.lt textarea{
+	width: 94%;
+	margin-left: 2.8%;
+	}
+	button{
+	margin: 2%;
+	}
+	.btn-primary{
+	background-color: black;
+	border: 2px solid white;
+	border-radius: 5%;
+	}
+	.list-item{
+	margin-bottom: 2%;
+	list-style-type: none;
+	}
+	.list-item span{
+	margin-left: 10px;
+	font-size: 1.4rem;
+	}
+	.list-item a{
+	color: white;
+	display: inline-block;
+	}
+	.list-item a:hover{
+	text-decoration: underline;
+	}
+	.form-control{
+	background-color: black;
+	}
+		
+	@media screen and (min-width: 770px){
+	.full{
+		width: 70%;
+		margin-left: 15%;
+	}
+	.lt textarea{
+	width: 95%;
+	margin-left: 2.4%;
+	}
+	}
+		
+	@media screen and (min-width: 1100px){
+	.full{
+		width: 65%;
+		margin-left: 17%;
+		margin-top: 5%;
+	}
+	.lt{
+		width: 55%;
+		display: inline-block;
+		float: left;
+		margin-right: 0;
+	}
+	.rt{
+		width: 35%;
+		display: inline-block;
+		margin-left: 0;
+	}
+	.list-item{
+	margin-bottom: 10%;
+	}
+	.contact-list{
+		margin-top: 22%;
+		padding-right: 8%;
+	}
+    
+	.fa-envelope, .gmail{
+		display: inline-block;
+		width: auto;
+	}
+    .hover{
+        color: red;
+    }
+	}
+
+       
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Utkarsh Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="portfolio.html">Home</a></li>
+                    <li><a href="/">About</a></li>
+                    <li><a href="/">Services</a></li>
+                    <li><a href="/">Projects</a></li>
+                    <li><a href="/">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="firstSection">
+            <div class="leftSection" style="color:aliceblue; padding-top: 100px;">
+                Hi, I am <b style="color:aqua;">Utkarsh Shukla</b>
+                <div>and I am a passionate<br><b style="color:aqua;">Web Developer</b></div>
+                <span id="element"></span>
+                <div class="buttons">
+                    <button class="btn"><a href="Utkarsh_Resume.pdf"style="color:white;">Download Resume</a></button>
+                    <button class="btn"><a href="https://www.linkedin.com/in/utkarshshukla143/"style="color:white;"> LinkedIn</a></button>
+                </div>
+            </div>
+            <div class="rightSection" style="padding-right: 200px; line-height: 0px;">
+                <img src="bg.png" style="width: 130%;">
+            </div>
+        </section>
+        <hr>
+       
+        <section class="secondSection" >
+            <span class="text-gray">What I have done so far</span>
+            <h1>Internships Experience</h1>
+            <div class="box"style="margin-bottom: 200px;">
+                <div class="vertical">
+                    <img class="image-top" src="bg.png" alt="">
+                    <div class="vertical-title">
+                        <b>Full Stack Developer</b><br>Techpile Technology Pvt.<br>Ltd. Lucknow (2 Months)<br>Vertual
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="bg.png" alt="">
+                    <div class="vertical-title">
+                        <b>Social Charity Drive</b><br>Hamari Pahchan NGO<br>(7 Days) Online
+                    </div>
+                </div>
+
+            </div>
+        </section><br><br><hr>
+        <section class="thirdSection" >
+            <span class="text-gray">What I have knowledge of</span>
+            <h1>Programming Languages</h1>
+            <ul style="text-decoration:none;margin-top: 20px;margin-left: 2 0px; line-height: 20px;">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Java Script</li>
+                <li>Bootstrap</li>
+                <li>MySql</li>
+                <li>C</li>
+                <li>Java</li>
+                
+            </ul>
+        </section>
+        <br><br>
+    </main>
+    
+    <footer>
+        <div class="footer">
+            <div class="footer-first" style="text-align:center; ">
+                <b> <h3 class="hover">Utkarsh Portfolio</h3></b>
+            </div>
+            <div class="footer-second"><a href="https://www.facebook.com/utkarsh.shukla.92167">Facebook</a></div>
+            <div class="footer-third"><a href="https://www.instagram.com/utkarshshukla143_/">Instagram</a></div>
+            <div class="footer-fourth"><a href="https://twitter.com/Utkarshshukl143">Twitter</a></div>
+            <div class="footer-second"><a href="https://www.linkedin.com/in/utkarshshukla143/">LinkedIn</a></div>
+            <div class="footer-third"><a href="https://github.com/Utkarshshukla143">Git Hub</a></div>
+            <div class="footer-fourth"><a href="contactus.html">Contact Us</a></div>
+  
+        </div>
+        <div class="footer-rights">
+         &looparrowright; www.utkarshshuklaportfolio.com | &copy;  All rights reserved
+        </div>
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Full Stack Developer', 'Front-End Developer', 'Back-End Developer', 'Java Developer', 'Teacher'],
+            typeSpeed: 50,
+        });
+    </script>
+</body>
+
+</html>
